@@ -1,0 +1,117 @@
+{
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.8.0"
+  },
+  "configuration": {
+    "seed": 42,
+    "valid_size": 0.2,
+    "confirmation_seed": 1234
+  },
+  "labels_sha256": "7a8ffd2c2b954569225469b69506fa38d61242cdb4202262453d8b4d84450501",
+  "n_train": 71395,
+  "n_test": 17623,
+  "selected": "relative_features",
+  "parameters": {
+    "text_weight": 0.2,
+    "class_weights": [
+      0.8,
+      1.0,
+      0.8
+    ]
+  },
+  "final_test": {
+    "macro_f1": 0.6144328082135485,
+    "qwk": 0.5385271433575275,
+    "accuracy": 0.6467116835953016,
+    "f1_by_class": [
+      0.5043888379405215,
+      0.7045689273594649,
+      0.6343406593406593
+    ],
+    "confusion_matrix": [
+      [
+        1925,
+        1535,
+        81
+      ],
+      [
+        2029,
+        7163,
+        1299
+      ],
+      [
+        138,
+        1144,
+        2309
+      ]
+    ]
+  },
+  "comparison": {
+    "current": {
+      "parameters": {
+        "text_weight": 0.2,
+        "class_weights": [
+          0.8,
+          1.0,
+          0.8
+        ]
+      },
+      "validation_macro_f1": 0.6085372946279146,
+      "confirmation_macro_f1": 0.6022236984780441
+    },
+    "finer_weights": {
+      "parameters": {
+        "text_weight": 0.3,
+        "class_weights": [
+          0.7,
+          1.0,
+          0.7
+        ]
+      },
+      "validation_macro_f1": 0.6136037047892863,
+      "confirmation_macro_f1": 0.6060573513302531
+    },
+    "relative_features": {
+      "parameters": {
+        "text_weight": 0.2,
+        "class_weights": [
+          0.8,
+          1.0,
+          0.8
+        ]
+      },
+      "validation_macro_f1": 0.6215013460143822,
+      "confirmation_macro_f1": 0.6176202759751418
+    }
+  },
+  "selected_validation": {
+    "macro_f1": 0.6215013460143822,
+    "qwk": 0.5452084409379945,
+    "accuracy": 0.6539730547154248,
+    "f1_by_class": [
+      0.5282035561005518,
+      0.7123885970607331,
+      0.6239118848818618
+    ],
+    "confusion_matrix": [
+      [
+        1723,
+        1249,
+        73
+      ],
+      [
+        1668,
+        6035,
+        1005
+      ],
+      [
+        88,
+        951,
+        1756
+      ]
+    ]
+  }
+}
